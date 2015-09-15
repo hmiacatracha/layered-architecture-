@@ -1,0 +1,7 @@
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-util/src/main/java/es/udc/ws/app/exceptions/CompleteEventException.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-util/src/main/java/es/udc/ws/app/exceptions/EventHasAttendeesException.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-util/src/main/java/es/udc/ws/app/exceptions/ReduceAforoException.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-util/src/main/java/es/udc/ws/app/dto/EventDto.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-util/src/main/java/es/udc/ws/app/exceptions/ExpiredEventException.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-util/src/main/java/es/udc/ws/app/dto/ReplyDto.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-util/src/main/java/es/udc/ws/app/exceptions/InvalidRankDate.java

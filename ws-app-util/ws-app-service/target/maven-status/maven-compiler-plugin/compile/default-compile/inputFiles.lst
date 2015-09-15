@@ -1,0 +1,11 @@
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-service/src/main/java/es/udc/ws/app/soapservice/SoapInvalidRankDateException.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-service/src/main/java/es/udc/ws/app/soapservice/SoapExpiredEventException.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-service/src/main/java/es/udc/ws/app/soapservice/SoapEventHasAttendeesException.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-service/src/main/java/es/udc/ws/app/soapservice/SoapEventService.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-service/src/main/java/es/udc/ws/app/soapservice/SoapCompleteEventException.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-service/src/main/java/es/udc/ws/app/soapservice/SoapInstanceNotFoundExceptionInfo.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-service/src/main/java/es/udc/ws/app/serviceutil/ReplyToReplyDtoConversor.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-service/src/main/java/es/udc/ws/app/serviceutil/EventToEventDtoConversor.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-service/src/main/java/es/udc/ws/app/soapservice/SoapReduceAforoException.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-service/src/main/java/es/udc/ws/app/soapservice/SoapInstanceNotFoundException.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-service/src/main/java/es/udc/ws/app/soapservice/SoapInputValidationException.java

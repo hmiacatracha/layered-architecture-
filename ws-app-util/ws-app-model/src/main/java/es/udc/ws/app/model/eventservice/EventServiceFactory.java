@@ -1,0 +1,38 @@
+package es.udc.ws.app.model.eventservice;
+
+import es.udc.ws.util.configuration.ConfigurationParametersManager;
+
+public class EventServiceFactory {
+	
+	private final static String CLASS_NAME_PARAMETER = "EventServiceFactory.className";
+    private static EventService service = null;
+
+    private EventServiceFactory() {
+    }
+
+    @SuppressWarnings("rawtypes")
+    private static EventService getInstance() {
+        try {
+            String serviceClassName = ConfigurationParametersManager
+                    .getParameter(CLASS_NAME_PARAMETER);
+            
+            System.out.println(serviceClassName);
+            
+            Class serviceClass = Class.forName(serviceClassName);
+            return (EventService) serviceClass.newInstance();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public synchronized static EventService getService() {
+
+        if (service == null) {
+            service = getInstance();
+        }
+        return service;
+
+    }
+
+}

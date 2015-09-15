@@ -1,0 +1,11 @@
+es/udc/ws/app/soapservice/SoapInstanceNotFoundExceptionInfo.class
+es/udc/ws/app/soapservice/SoapInstanceNotFoundException.class
+es/udc/ws/app/soapservice/SoapEventService.class
+es/udc/ws/app/soapservice/SoapReduceAforoException.class
+es/udc/ws/app/soapservice/SoapInputValidationException.class
+es/udc/ws/app/serviceutil/EventToEventDtoConversor.class
+es/udc/ws/app/soapservice/SoapCompleteEventException.class
+es/udc/ws/app/soapservice/SoapEventHasAttendeesException.class
+es/udc/ws/app/serviceutil/ReplyToReplyDtoConversor.class
+es/udc/ws/app/soapservice/SoapInvalidRankDateException.class
+es/udc/ws/app/soapservice/SoapExpiredEventException.class

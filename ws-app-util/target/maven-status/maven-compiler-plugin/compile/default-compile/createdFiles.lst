@@ -1,0 +1,7 @@
+es/udc/ws/app/exceptions/ReduceAforoException.class
+es/udc/ws/app/exceptions/EventHasAttendeesException.class
+es/udc/ws/app/dto/EventDto.class
+es/udc/ws/app/exceptions/InvalidRankDate.class
+es/udc/ws/app/dto/ReplyDto.class
+es/udc/ws/app/exceptions/ExpiredEventException.class
+es/udc/ws/app/exceptions/CompleteEventException.class

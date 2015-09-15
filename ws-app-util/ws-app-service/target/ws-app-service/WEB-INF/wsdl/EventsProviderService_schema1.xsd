@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://soap.ws.udc.es/" xmlns:tns="http://soap.ws.udc.es/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="SoapCompleteEventException" nillable="true" type="xs:string"/>
+
+  <xs:element name="SoapEventHasAttendeesException" nillable="true" type="xs:string"/>
+
+  <xs:element name="SoapExpiredEventException" nillable="true" type="xs:string"/>
+
+  <xs:element name="SoapInputValidationException" nillable="true" type="xs:string"/>
+
+  <xs:element name="SoapInstanceNotFoundException" nillable="true" type="tns:soapInstanceNotFoundExceptionInfo"/>
+
+  <xs:element name="SoapInvalidRankDateException" nillable="true" type="xs:string"/>
+
+  <xs:element name="SoapReduceAforoException" nillable="true" type="xs:string"/>
+
+  <xs:element name="addEvent" type="tns:addEvent"/>
+
+  <xs:element name="addEventResponse" type="tns:addEventResponse"/>
+
+  <xs:element name="findEvent" type="tns:findEvent"/>
+
+  <xs:element name="findEventById" type="tns:findEventById"/>
+
+  <xs:element name="findEventByIdResponse" type="tns:findEventByIdResponse"/>
+
+  <xs:element name="findEventResponse" type="tns:findEventResponse"/>
+
+  <xs:element name="getRepliesByEvent" type="tns:getRepliesByEvent"/>
+
+  <xs:element name="getRepliesByEventResponse" type="tns:getRepliesByEventResponse"/>
+
+  <xs:element name="getRepliesByUser" type="tns:getRepliesByUser"/>
+
+  <xs:element name="getRepliesByUserResponse" type="tns:getRepliesByUserResponse"/>
+
+  <xs:element name="removeEvent" type="tns:removeEvent"/>
+
+  <xs:element name="removeEventResponse" type="tns:removeEventResponse"/>
+
+  <xs:element name="replyEvent" type="tns:replyEvent"/>
+
+  <xs:element name="replyEventResponse" type="tns:replyEventResponse"/>
+
+  <xs:element name="updateEvent" type="tns:updateEvent"/>
+
+  <xs:element name="updateEventResponse" type="tns:updateEventResponse"/>
+
+  <xs:complexType name="removeEvent">
+    <xs:sequence>
+      <xs:element name="eventID" type="xs:long" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="removeEventResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="soapInstanceNotFoundExceptionInfo">
+    <xs:sequence>
+      <xs:element name="instanceId" type="xs:anyType" minOccurs="0"/>
+      <xs:element name="instanceType" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="updateEvent">
+    <xs:sequence>
+      <xs:element name="EventDto" type="tns:eventDto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="eventDto">
+    <xs:sequence>
+      <xs:element name="aforo" type="xs:int"/>
+      <xs:element name="attendees" type="xs:long"/>
+      <xs:element name="dateInit" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="description" type="xs:string" minOccurs="0"/>
+      <xs:element name="duration" type="xs:long"/>
+      <xs:element name="eventID" type="xs:long" minOccurs="0"/>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="updateEventResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="findEvent">
+    <xs:sequence>
+      <xs:element name="keywords" type="xs:string" minOccurs="0"/>
+      <xs:element name="inicio" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="fin" type="xs:dateTime" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="findEventResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:eventDto" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="replyEvent">
+    <xs:sequence>
+      <xs:element name="user" type="xs:string" minOccurs="0"/>
+      <xs:element name="eventId" type="xs:long" minOccurs="0"/>
+      <xs:element name="type" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="replyEventResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:replyDto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="replyDto">
+    <xs:sequence>
+      <xs:element name="dateReply" type="xs:dateTime" minOccurs="0"/>
+      <xs:element name="eventID" type="xs:long" minOccurs="0"/>
+      <xs:element name="replyID" type="xs:long" minOccurs="0"/>
+      <xs:element name="typeReply" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="userID" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getRepliesByEvent">
+    <xs:sequence>
+      <xs:element name="eventId" type="xs:long" minOccurs="0"/>
+      <xs:element name="type" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getRepliesByEventResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:replyDto" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="addEvent">
+    <xs:sequence>
+      <xs:element name="eventDto" type="tns:eventDto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="addEventResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:long" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="findEventById">
+    <xs:sequence>
+      <xs:element name="eventID" type="xs:long" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="findEventByIdResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:eventDto" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getRepliesByUser">
+    <xs:sequence>
+      <xs:element name="userId" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getRepliesByUserResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:replyDto" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

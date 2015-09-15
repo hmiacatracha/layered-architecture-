@@ -1,0 +1,14 @@
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-model/src/main/java/es/udc/ws/app/model/eventservice/EventServiceImpl.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-model/src/main/java/es/udc/ws/app/model/eventservice/EventServiceFactory.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-model/src/main/java/es/udc/ws/app/model/event/Event.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-model/src/main/java/es/udc/ws/app/model/reply/SqlReplyDaoFactory.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-model/src/main/java/es/udc/ws/app/model/event/SqlEventDao.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-model/src/main/java/es/udc/ws/app/model/reply/Reply.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-model/src/main/java/es/udc/ws/app/model/eventservice/EventService.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-model/src/main/java/es/udc/ws/app/model/event/AbstractSqlEventDao.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-model/src/main/java/es/udc/ws/app/model/reply/AbstractSqlReplyDao.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-model/src/main/java/es/udc/ws/app/model/event/SqlEventDaoFactory.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-model/src/main/java/es/udc/ws/app/model/util/ModelConstants.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-model/src/main/java/es/udc/ws/app/model/event/Jdbc3CcSqlEventDao.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-model/src/main/java/es/udc/ws/app/model/reply/Jdbc3CcSqlReplyDao.java
+/home/hmia/workspace/JAVA-ISD/ws-app/ws-app-model/src/main/java/es/udc/ws/app/model/reply/SqlReplyDao.java

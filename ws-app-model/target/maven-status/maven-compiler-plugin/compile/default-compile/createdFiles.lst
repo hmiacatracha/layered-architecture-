@@ -1,0 +1,14 @@
+es/udc/ws/app/model/event/Event.class
+es/udc/ws/app/model/reply/Reply.class
+es/udc/ws/app/model/eventservice/EventServiceFactory.class
+es/udc/ws/app/model/reply/SqlReplyDao.class
+es/udc/ws/app/model/event/SqlEventDao.class
+es/udc/ws/app/model/event/SqlEventDaoFactory.class
+es/udc/ws/app/model/util/ModelConstants.class
+es/udc/ws/app/model/event/AbstractSqlEventDao.class
+es/udc/ws/app/model/eventservice/EventServiceImpl.class
+es/udc/ws/app/model/event/Jdbc3CcSqlEventDao.class
+es/udc/ws/app/model/reply/AbstractSqlReplyDao.class
+es/udc/ws/app/model/eventservice/EventService.class
+es/udc/ws/app/model/reply/Jdbc3CcSqlReplyDao.class
+es/udc/ws/app/model/reply/SqlReplyDaoFactory.class
